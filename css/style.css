@@ -1,0 +1,176 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #900;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegação */
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    background-color: #c00;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #700;
+}
+
+/* Imagem principal */
+main img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilo para formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 30px auto;
+    max-width: 500px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Estilo para a tabela do cardápio */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table.table th,
+table.table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table.table th {
+    background-color: #f2f2f2;
+}
+
+/* Texto centralizado */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Imagem e texto em "Sobre nós" */
+center img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o link "Voltar" */
+a.voltar {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    background-color: #900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+a.voltar:hover {
+    background-color: #700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table.table th, table.table td {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    main img {
+        max-height: 300px;
+    }
+}
+
+/* Botão enviar */
+button[type="submit"] {
+    margin-top: 10px;
+    background-color: #900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #700;
+}
+
+#title, p {
+    text-align: center;
+}
